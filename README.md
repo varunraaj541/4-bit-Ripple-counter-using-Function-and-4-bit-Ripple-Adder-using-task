@@ -116,7 +116,7 @@ endmodule
 # 4 bit Ripple counter using Function
 
 ```
-module ripple_counter_func (
+module ripple_counter (
     input clk, rst,
     output reg [3:0] Q
 );
@@ -138,11 +138,11 @@ endmodule
 ```
 # Test Bench
 ```
-module ripple_counter_func_tb;
+module ripple_counter_tb;
     reg clk_t, rst_t;
     wire [3:0] Q_t;
 
-    ripple_counter_func uut (
+    ripple_counter uut (
         .clk(clk_t),
         .rst(rst_t),
         .Q(Q_t)
